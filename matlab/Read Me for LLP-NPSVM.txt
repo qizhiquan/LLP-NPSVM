@@ -1,0 +1,47 @@
+Matalb code for LLP-NPSVM (Version 0.1)
+
+*****************************************************************************************
+**
+
+This is a matlab for  LLP-NPSVM model. You could use these code to construct classification model for Learning with Label Proportions(LLP) problem.
+
+runningDemo.m: the sample code for illustrating how to use these functions.
+
+NPSVM_Parameters.m: matlab struct for model parameters.
+
+NPSVM_Train.m: train a model by nonparallel support vector machine.
+
+NPSVMLLP.m:    train a model for LLP problem by LLP-NPSVM method
+
+
+
+
+npsvmpredict.mexw64, npsvmpredict.mexw64, npsvmtrain.mexw32, npsvmpredict.mexw32: matlab mex files for 32-bit and 64-bit Windows.
+
+32-bit mex files:
+npsvmtrain.mexw32: 32-bit nonparallel support vector machine model constructor.
+
+64-bit mex files:
+npsvmtrain.mexw64: 64-bit nonparallel support vector machine model constructor.
+
+
+toydata.mat: a sample dataset for testing the sample code.
+
+
+*****************************************************************************************
+**
+
+This package is free for non-commercial use. If it help you please cite the papers:
+
+We were inspired from NPSVM,LIBSVM and SVM-Light in the organization of the code. You can find the resource from these url:
+
+
+
+LIBSVM:http://www.csie.ntu.edu.tw/~cjlin/libsvm/
+
+SVM-Light:http://svmlight.joachims.org/
+
+
+
+
+
