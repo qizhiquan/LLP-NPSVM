@@ -3,8 +3,8 @@ function  [predicted_label, decision_values,accuracy] = NPSVM_Test(X,Y, model)
 data_num = size(X,1);
 [model0, model1] = splitmodel(model);
 
-[predicted_label, accuracy1, decision_values1] = svmpredict(Y,X,model0);
-[predicted_label, accuracy2, decision_values2] = svmpredict(Y, X,model1);
+[~, ~, decision_values1] = svmpredict(Y,X,model0);
+[predicted_label, ~, decision_values2] = svmpredict(Y, X,model1);
 %    decision_values = decision_values1;
 for i=1:data_num
     if((abs(decision_values1(i)))<(abs(decision_values2(i))))
